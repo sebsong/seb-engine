@@ -1,10 +1,11 @@
+#include <iostream>
+
 #include <SFML/System.hpp>
 
 namespace seb
 {
-    template <class T>
-    float getVectorMagnitude(const sf::Vector2<T>& vector)
+    void testFunc()
     {
-        return sqrt(pow(vector.x, 2) + pow(vector.y, 2));
+        std::cout << "TEST FUNC" << std::endl;
     }
 }

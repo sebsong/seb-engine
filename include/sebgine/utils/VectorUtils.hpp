@@ -5,8 +5,7 @@
 
 namespace seb
 {
-    template <class T>
-    float getVectorMagnitude(const sf::Vector2<T>& vector);
+    void testFunc();
 }
 
 #endif
