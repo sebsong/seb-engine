@@ -4,8 +4,4 @@
 
 namespace seb
 {
-    void testFunc()
-    {
-        std::cout << "TEST FUNC" << std::endl;
-    }
 }
