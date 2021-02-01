@@ -11,7 +11,7 @@ namespace seb
             virtual void tick(sf::Event* event, sf::RenderWindow* window);
 
         protected:
-            virtual void render(sf::RenderWindow* window);
+            virtual void render(sf::RenderWindow* window) = 0;
     };
 }
 
