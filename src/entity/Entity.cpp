@@ -2,8 +2,8 @@
 
 namespace seb
 {
-    void Entity::tick()
+    void Entity::tick(sf::Event* event, sf::RenderWindow* window)
     {
-        update();
+        update(event, window);
     }
 }

@@ -8,10 +8,10 @@ namespace seb
     class VisualEntity: public Entity
     {
         public:
-            virtual void tick();
+            virtual void tick(sf::Event* event, sf::RenderWindow* window);
 
         protected:
-            virtual void render();
+            virtual void render(sf::RenderWindow* window);
     };
 }
 
