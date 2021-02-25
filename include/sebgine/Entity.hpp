@@ -3,5 +3,6 @@
 
 #include <sebgine/entity/Entity.hpp>
 #include <sebgine/entity/VisualEntity.hpp>
+#include <sebgine/entity/ControllableEntity.hpp>
 
 #endif

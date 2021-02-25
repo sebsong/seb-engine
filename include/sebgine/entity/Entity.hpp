@@ -9,10 +9,10 @@ namespace seb
     class Entity
     {
         public:
-            void tick(sf::Event* event, sf::RenderWindow* window);
+            void tick(sf::RenderWindow* window, std::vector<sf::Event*> events);
 
         protected:
-            virtual void update(sf::Event* event, sf::RenderWindow* window) = 0;
+            virtual void update() = 0;
     };
 }
 

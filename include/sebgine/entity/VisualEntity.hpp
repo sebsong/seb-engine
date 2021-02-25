@@ -8,7 +8,7 @@ namespace seb
     class VisualEntity: public Entity
     {
         public:
-            virtual void tick(sf::Event* event, sf::RenderWindow* window);
+            virtual void tick(sf::RenderWindow* window, std::vector<sf::Event*> events);
 
         protected:
             virtual void render(sf::RenderWindow* window) = 0;

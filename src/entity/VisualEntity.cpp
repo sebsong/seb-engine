@@ -3,9 +3,9 @@
 
 namespace seb
 {
-    void VisualEntity::tick(sf::Event* event, sf::RenderWindow* window)
+    void VisualEntity::tick(sf::RenderWindow* window, std::vector<sf::Event*> events)
     {
-        update(event, window);
+        update();
         render(window);
     }
 }
