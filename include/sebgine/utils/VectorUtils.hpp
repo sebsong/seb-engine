@@ -1,6 +1,8 @@
 #ifndef SEBGINE_UTILS_VECTOR_HPP
 #define SEBGINE_UTILS_VECTOR_HPP
 
+#include <cmath>
+
 #include <SFML/System.hpp>
 
 namespace seb

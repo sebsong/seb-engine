@@ -3,9 +3,9 @@
 
 namespace seb
 {
-    void ControllableEntity::tick(sf::RenderWindow* window, std::vector<sf::Event*> events)
+    void ControllableEntity::tick(sf::RenderWindow* window)
     {
-        input(events);
+        input(window);
         update();
         render(window);
     }

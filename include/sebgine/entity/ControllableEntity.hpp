@@ -8,10 +8,11 @@ namespace seb
     class ControllableEntity: public VisualEntity
     {
         public:
-            virtual void tick(sf::RenderWindow* window, std::vector<sf::Event*> events);
+            virtual void tick(sf::RenderWindow* window);
+            virtual void consumeEvent(sf::Event event) = 0;
 
         protected:
-            virtual void input(std::vector<sf::Event*> events) = 0;
+            virtual void input(sf::RenderWindow* window) = 0;
     };
 }
 
