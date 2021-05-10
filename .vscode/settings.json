@@ -70,6 +70,10 @@
         "utility": "cpp",
         "vector": "cpp",
         "memory_resource": "cpp",
-        "bit": "cpp"
+        "bit": "cpp",
+        "codecvt": "cpp",
+        "iomanip": "cpp",
+        "stack": "cpp",
+        "filesystem": "cpp"
     }
 }
