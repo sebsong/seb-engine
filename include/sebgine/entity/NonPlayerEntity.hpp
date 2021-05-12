@@ -2,10 +2,11 @@
 #define SEBGINE_ENTITY_VISUAL_HPP
 
 #include <sebgine/entity/Entity.hpp>
+#include <sebgine/entity/interfaces/Viewable.hpp>
 
 namespace seb
 {
-    class VisualEntity: public Entity
+    class NonPlayerEntity: public Entity, public Viewable
     {
         public:
             virtual void tick(sf::RenderWindow* window);

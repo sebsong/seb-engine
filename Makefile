@@ -14,7 +14,6 @@ UTILS_OBJECT_FILE = build/${UTILS_LIB_NAME}
 UTILS_LIB_FILE = lib${UTILS_LIB_NAME}.dylib
 
 
-
 default: build
 
 build:
