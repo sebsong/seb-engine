@@ -1,9 +1,7 @@
-#include <sebgine/entity/CircleCollisionDetector.hpp>
+#include <sebgine/collision/CircleCollisionDetector.hpp>
 
-#include <sebgine/entity/CircleCollidable.hpp>
+#include <sebgine/collision/interfaces/CircleCollidable.hpp>
 #include <sebgine/utils/VectorUtils.hpp>
-
-#include <iostream>
 
 namespace seb
 {

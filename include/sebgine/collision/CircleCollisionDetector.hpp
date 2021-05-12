@@ -1,10 +1,9 @@
 #ifndef SEBGINE_ENTITY_COLLISION_DETECTOR_HPP
 #define SEBGINE_ENTITY_COLLISION_DETECTOR_HPP
 
-#include <sebgine/entity/CircleCollidable.hpp>
+#include <sebgine/collision/interfaces/CircleCollidable.hpp>
 
 #include <SFML/Graphics.hpp>
-
 
 namespace seb
 {

@@ -1,5 +1,5 @@
-#ifndef SEBGINE_UTILS_HPP
-#define SEBGINE_UTILS_HPP
+#ifndef SEBGINE_ENTITY_HPP
+#define SEBGINE_ENTITY_HPP
 
 #include <sebgine/entity/PlayerEntity.hpp>
 #include <sebgine/entity/NonPlayerEntity.hpp>
