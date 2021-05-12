@@ -9,10 +9,7 @@ namespace seb
     class Entity
     {
         public:
-            void tick(sf::RenderWindow* window);
-
-        protected:
-            virtual void update() = 0;
+            virtual void tick(sf::RenderWindow* window) = 0;
     };
 }
 
