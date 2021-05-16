@@ -1,13 +1,17 @@
 #include <sebgine/collision/CircleCollisionDetector.hpp>
 
-#include <sebgine/collision/interfaces/CircleCollidable.hpp>
 #include <sebgine/utils/VectorUtils.hpp>
 
 namespace seb
 {
-    CircleCollisionDetector::CircleCollisionDetector(std::vector<CircleCollidable*>* collidables)
+    CircleCollisionDetector::CircleCollisionDetector()
     {
-        this->collidables = collidables;
+        this->collidables = new std::vector<CircleCollidable*>();
+    }
+
+    void CircleCollisionDetector::registerCollidable(CircleCollidable* collidable)
+    {
+        collidables->push_back(collidable);
     }
 
     void CircleCollisionDetector::detect()

@@ -1,5 +1,5 @@
-#ifndef SEBGINE_ENTITY_COLLISION_DETECTOR_HPP
-#define SEBGINE_ENTITY_COLLISION_DETECTOR_HPP
+#ifndef SEBGINE_COLLISION_COLLISION_DETECTOR_HPP
+#define SEBGINE_COLLISION_COLLISION_DETECTOR_HPP
 
 #include <sebgine/collision/interfaces/CircleCollidable.hpp>
 
@@ -10,7 +10,8 @@ namespace seb
     class CircleCollisionDetector
     {
         public:
-            CircleCollisionDetector(std::vector<CircleCollidable*>* collidables);
+            CircleCollisionDetector();
+            void registerCollidable(CircleCollidable* collidable);
             void detect();
 
         private:

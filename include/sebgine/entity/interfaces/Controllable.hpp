@@ -1,8 +1,8 @@
 #ifndef SEBGINE_ENTITY_CONTROLLABLE_HPP
 #define SEBGINE_ENTITY_CONTROLLABLE_HPP
 
-#include<SFML/Graphics/RenderWindow.hpp>
-#include<SFML/Window/Event.hpp>
+#include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Window/Event.hpp>
 
 namespace seb
 {
