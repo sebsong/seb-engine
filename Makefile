@@ -20,6 +20,7 @@ UTILS_SOURCE_FILES = src/${UTILS_DIR_NAME}/*.cpp
 UTILS_OBJECT_FILE = build/${UTILS_DIR_NAME}/${UTILS_LIB_NAME}
 UTILS_LIB_FILE = lib${UTILS_LIB_NAME}.dylib
 
+CFLAGS = -Wall -W -std=c++17 -arch arm64
 
 default: build
 
@@ -29,16 +30,16 @@ build:
 
 	# TODO: is there a better way to organize the object files instead of dumping them in the current dir and removing them after
 
-	g++ -Wall -W -c -std=c++11 -I ${INCLUDE_DIR} ${COLLISION_SOURCE_FILES}
-	g++ -Wall -W -std=c++11 -dynamiclib -install_name @rpath/${COLLISION_LIB_FILE} -o lib/${COLLISION_LIB_FILE} *.o ${SFML_LIBRARIES}
+	g++ ${CFLAGS} -c -I ${INCLUDE_DIR} ${COLLISION_SOURCE_FILES}
+	g++ ${CFLAGS} -dynamiclib -install_name @rpath/${COLLISION_LIB_FILE} -o lib/${COLLISION_LIB_FILE} *.o ${SFML_LIBRARIES}
 	rm *.o
 
-	g++ -Wall -W -c -std=c++11 -I ${INCLUDE_DIR} ${ENTITY_SOURCE_FILES}
-	g++ -Wall -W -std=c++11 -dynamiclib -install_name @rpath/${ENTITY_LIB_FILE} -o lib/${ENTITY_LIB_FILE} *.o ${SFML_LIBRARIES}
+	g++ ${CFLAGS} -c -I ${INCLUDE_DIR} ${ENTITY_SOURCE_FILES}
+	g++ ${CFLAGS} -dynamiclib -install_name @rpath/${ENTITY_LIB_FILE} -o lib/${ENTITY_LIB_FILE} *.o ${SFML_LIBRARIES}
 	rm *.o
 
-	g++ -Wall -W -c -std=c++11 -I ${INCLUDE_DIR} ${UTILS_SOURCE_FILES}
-	g++ -Wall -W -std=c++11 -dynamiclib -install_name @rpath/${UTILS_LIB_FILE} -o lib/${UTILS_LIB_FILE} *.o ${SFML_LIBRARIES}
+	g++ ${CFLAGS} -c -I ${INCLUDE_DIR} ${UTILS_SOURCE_FILES}
+	g++ ${CFLAGS} -dynamiclib -install_name @rpath/${UTILS_LIB_FILE} -o lib/${UTILS_LIB_FILE} *.o ${SFML_LIBRARIES}
 	rm *.o
 
 clean:
